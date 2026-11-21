@@ -34,3 +34,5 @@ footer .creator-credit{font-size:11px;line-height:1.9}footer .creator-credit str
 
 /* Display only the three site examples, excluding the screenshot heading. */
 .supplied-websites .reference-crop{position:relative;overflow:hidden;aspect-ratio:792 / 158;width:100%;max-width:790px;margin:auto;border-radius:6px}.supplied-websites .reference-crop img{position:absolute;top:0;left:0;display:block;width:100%;max-width:none;height:auto;max-height:none;transform:translateY(-23.5294118%)}
+
+.supplied-coding>img{max-width:790px;max-height:265px;margin:auto}.supplied-coding{background:#f9faf5}
