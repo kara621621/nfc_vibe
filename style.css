@@ -31,3 +31,6 @@ footer .creator-credit{font-size:11px;line-height:1.9}footer .creator-credit str
 
 /* User-supplied introduction reference photos */
 .supplied-websites,.supplied-style,.supplied-keyring{padding:10px;background:#f9faf5}.supplied-websites>img{max-height:215px;max-width:790px;margin:auto}.supplied-style>img{max-height:295px;max-width:670px;margin:auto}.supplied-keyring>img{max-height:275px;max-width:610px;margin:auto}.supplied-style+.theme-controls{margin-top:22px}@media(max-width:700px){.supplied-websites,.supplied-style,.supplied-keyring{padding:6px}.supplied-websites>img,.supplied-style>img,.supplied-keyring>img{max-height:none;height:auto;width:100%;object-fit:contain}}
+
+/* Display only the three site examples, excluding the screenshot heading. */
+.supplied-websites .reference-crop{position:relative;overflow:hidden;aspect-ratio:792 / 158;width:100%;max-width:790px;margin:auto;border-radius:6px}.supplied-websites .reference-crop img{position:absolute;top:0;left:0;display:block;width:100%;max-width:none;height:auto;max-height:none;transform:translateY(-23.5294118%)}
