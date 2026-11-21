@@ -3,7 +3,7 @@ const KEY='k-vibe-studio-v1'; let saved={}; let storageOK=true;
 try{saved=JSON.parse(localStorage.getItem(KEY)||'{}')}catch{storageOK=false}
 const features=['TOP 3 추천','사진 갤러리','취향 테스트','응원 메시지','랜덤 추천 버튼','퀴즈'];
 $('features').innerHTML=features.map((x,i)=>`<label><input id="feature${i}" type="checkbox" data-save>${x}</label>`).join('');
-const missions={1:['나만의 K컬처 주제를 선택했어요.','웹사이트 이름·분위기·기능을 정했어요.','AI 제작 요청서를 완성했어요.','친구의 피드백을 기획에 반영했어요.'],2:['Canva 웹사이트를 체험하고 이미지 자료를 준비했어요.','Canva AI 코드로 웹사이트를 만들었어요.','버튼·모바일 화면을 확인하고 수정했어요.','게시한 주소를 다른 기기에서 확인했어요.'],3:['웹사이트와 어울리는 앨범 콘셉트를 정했어요.','다섯 영역의 디자인과 인쇄 범위를 확인했어요.','완성한 인쇄용 파일을 제출했어요.','출력물을 잘라 CD 키링을 조립했어요.'],4:['NFC Tools에서 URL 레코드를 기록했어요.','읽기 기능으로 저장한 주소를 확인했어요.','태그로 내 웹사이트가 열리는지 확인했어요.','친구의 작품을 체험하고 피드백했어요.']};
+const missions={1:['나만의 K컬처 주제를 선택했어요.','웹사이트 이름·분위기·기능을 정했어요.','AI 제작 요청서를 완성했어요.','친구의 피드백을 기획에 반영했어요.'],2:['Gemini에서 이미지를 만들고 자료를 준비했어요.','Canva AI 코드로 웹사이트를 만들었어요.','버튼·모바일 화면을 확인하고 수정했어요.','게시한 주소를 다른 기기에서 확인했어요.'],3:['웹사이트와 어울리는 앨범 콘셉트를 정했어요.','다섯 영역의 디자인과 인쇄 범위를 확인했어요.','완성한 인쇄용 파일을 제출했어요.','출력물을 잘라 CD 키링을 조립했어요.'],4:['NFC Tools에서 URL 레코드를 기록했어요.','읽기 기능으로 저장한 주소를 확인했어요.','태그로 내 웹사이트가 열리는지 확인했어요.','친구의 작품을 체험하고 피드백했어요.']};
 document.querySelectorAll('[data-checks]').forEach(el=>{const n=el.dataset.checks;el.innerHTML='<h4>오늘의 미션 체크</h4>'+missions[n].map((t,i)=>`<label class="check-line"><input id="mission${n}_${i}" type="checkbox" data-save data-mission>${t}</label>`).join('')});
 const tests=['제목과 주제가 내 기획과 맞아요.','버튼을 누르면 실제로 반응해요.','추천·퀴즈 등 선택한 기능이 작동해요.','글자와 배경 색상이 읽기 편해요.','작은 화면에서도 내용이 잘 보여요.'];
 $('testChecks').innerHTML=tests.map((t,i)=>`<label class="check-line"><input id="test${i}" type="checkbox" data-save>${t}</label>`).join('');
